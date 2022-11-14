@@ -24,7 +24,6 @@ const AboutMeHome = () => {
             className="home__lang"
             onClick={() => {
               i18n.changeLanguage("ru");
-              console.log(i18n.language);
             }}
           >
             RU
@@ -34,12 +33,10 @@ const AboutMeHome = () => {
             className="home__lang"
             onClick={() => {
               i18n.changeLanguage("en");
-              console.log(i18n.language);
             }}
           >
             EN
           </div>
-          {/* TODO */}
         </div>
       </div>
       <div className="home__img">

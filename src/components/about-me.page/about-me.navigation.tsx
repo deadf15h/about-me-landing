@@ -8,24 +8,24 @@ const AboutMeNavigation = () => {
     });
   };
 
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="navigation">
       <div className="navigation__item" onClick={() => goTo("#home")}>
-        home
+        {t("home")}
       </div>
       <div className="navigation__item" onClick={() => goTo("#description")}>
-        about me
+        {t("about me")}
       </div>
       <div className="navigation__item" onClick={() => goTo("#skills")}>
-        skills
+        {t("skills")}
       </div>
       <div className="navigation__item" onClick={() => goTo("#portfolio")}>
-        portfolio
+        {t("portfolio")}
       </div>
       <div className="navigation__item" onClick={() => goTo("#contacts")}>
-        contacts
+        {t("contacts")}
       </div>
     </div>
   );
