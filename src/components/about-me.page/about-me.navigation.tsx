@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import "./about-me.navigation.sass";
 
 const AboutMeNavigation = () => {
@@ -6,6 +7,9 @@ const AboutMeNavigation = () => {
       behavior: "smooth",
     });
   };
+
+  // const { t } = useTranslation();
+
   return (
     <div className="navigation">
       <div className="navigation__item" onClick={() => goTo("#home")}>
