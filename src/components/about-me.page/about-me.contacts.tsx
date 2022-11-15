@@ -3,21 +3,25 @@ import AboutMeContactsItem from "./about-me.contacts-item";
 import iLinkedinLogo from "../../assets/img/linkedin-logo.png";
 import iGithubLogo from "../../assets/img/github-logo.png";
 import "./about-me.contacts.sass";
+import { Trans, useTranslation } from "react-i18next";
 
 const AboutMeContacts = () => {
+  const { t } = useTranslation();
   return (
     <div className="about-me__container">
       <div className="contacts">
         <div className="about-me__title" id="contacts">
-          Contacts
+          {t("contacts")}
         </div>
         <AppearingContainer time={1} offset={-300}>
           <div className="about-me__subtitle contacts__subtitle">
-            Want to know more or just chat? <br />
-            You are welcome!
+            <Trans i18nKey="contactsSection.text">
+              Want to know more or just chat? <br />
+              You are welcome!
+            </Trans>
           </div>
           <a href="https://t.me/thelogsamurai" target="_blank">
-            <div className="contacts__button">Send message</div>
+            <div className="contacts__button">{t("Send message")}</div>
           </a>
           <div className="contacts__list">
             <AboutMeContactsItem
