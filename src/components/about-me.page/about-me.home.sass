@@ -40,3 +40,16 @@
         &__img
             &_photo
                 width: 100%
+
+@media (max-width: $tablet-width)
+    .home
+        &__box
+            flex-direction: column
+            align-items: start
+            gap: 10px
+        &__item
+            &_special
+                transform: rotate(0deg)
+        &__img
+            &_photo
+                height: 280px
