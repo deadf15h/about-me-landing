@@ -1,6 +1,6 @@
 import { useState } from "react";
 import iPortfolio from "../../assets/img/photo_for_portfolio.jpg";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import "./about-me.home.sass";
 
 const AboutMeHome = () => {
@@ -10,14 +10,18 @@ const AboutMeHome = () => {
     <div className="home" id="home">
       <div className="home__box">
         <div className="home__item_name">
-          Nikolai
-          <br />
-          Morozov
+          <Trans i18nKey="homeSection.name">
+            Nikolai
+            <br />
+            Morozov
+          </Trans>
         </div>
         <div className="home__item_work">
-          Frontend Developer
-          <br />
-          21 years old, Tver
+          <Trans i18nKey="homeSection.about">
+            Frontend Developer
+            <br />
+            21 years old, Tver
+          </Trans>
         </div>
         <div className="home__item_special">
           <div
