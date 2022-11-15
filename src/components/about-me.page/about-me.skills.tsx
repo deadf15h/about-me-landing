@@ -7,15 +7,20 @@ import iLinuxLogo from "../../assets/img/linux-logo.jpg";
 import AppearingContainer from "../appearing-container";
 import AboutMeSkillItem from "./about-me.skill-item";
 import "./about-me.skills.sass";
+import { useTranslation } from "react-i18next";
 
 const AboutMeSkills = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="about-me__container">
       <div className="skills">
         <div className="about-me__title" id="skills">
-          Skills
+          {t("skills")}
         </div>
-        <div className="about-me__subtitle skills__subtitle">My stack</div>
+        <div className="about-me__subtitle skills__subtitle">
+          {t("My stack")}
+        </div>
         <AppearingContainer time={1} offset={-300}>
           <div className="skills__box">
             {/* //FIXME  */}

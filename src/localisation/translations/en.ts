@@ -4,6 +4,7 @@ const en = {
   "about me": "about me",
   skills: "skills",
   portfolio: "portfolio",
+  "My stack": "My stack",
   homeSection: {
     name: "Nikolai<1></1>Morozov",
     about: "Frontend Developer<1></1>21 years old, Tver",
