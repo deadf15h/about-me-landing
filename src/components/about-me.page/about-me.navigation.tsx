@@ -29,28 +29,34 @@ const AboutMeNavigation = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="navigation">
-      <div className="navigation__item" onClick={() => goTo("#home")}>
-        {t("home")}
-      </div>
-      <div className="navigation__item" onClick={() => goTo("#description")}>
-        {t("about me")}
-      </div>
-      <div className="navigation__item" onClick={() => goTo("#skills")}>
-        {t("skills")}
-      </div>
-      <div className="navigation__item" onClick={() => goTo("#portfolio")}>
-        {t("portfolio")}
-      </div>
-      <div className="navigation__item" onClick={() => goTo("#contacts")}>
-        {t("contacts")}
-      </div>
-      {isMobileWidth && (
+    <div className={cn("navigation", { _open: isOpen })}>
+      {isMobileWidth ? (
         <div className="header__btn" onClick={toggleMenu}>
           <div className={cn("header__btn-row", { _opened: isOpen })} />
           <div className={cn("header__btn-row", { _opened: isOpen })} />
           <div className={cn("header__btn-row", { _opened: isOpen })} />
         </div>
+      ) : (
+        <>
+          <div className="navigation__item" onClick={() => goTo("#home")}>
+            {t("home")}
+          </div>
+          <div
+            className="navigation__item"
+            onClick={() => goTo("#description")}
+          >
+            {t("about me")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#skills")}>
+            {t("skills")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#portfolio")}>
+            {t("portfolio")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#contacts")}>
+            {t("contacts")}
+          </div>
+        </>
       )}
     </div>
   );
