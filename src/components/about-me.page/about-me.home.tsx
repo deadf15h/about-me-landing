@@ -2,10 +2,15 @@ import iPortfolio from "../../assets/img/photo_for_portfolio.jpg";
 import { Trans, useTranslation } from "react-i18next";
 import cn from "classnames";
 import "./about-me.home.sass";
+import { useWidth } from "../../hooks/use-width";
 
 const AboutMeHome = () => {
   const { i18n } = useTranslation();
+  const { isMobileWidth, isDesktopWidth } = useWidth();
 
+  console.log(
+    `isMobileWidth: ${isMobileWidth}, isDesktopWidth: ${isDesktopWidth}`
+  );
   return (
     <div className="home" id="home">
       <div className="home__box">
@@ -25,7 +30,6 @@ const AboutMeHome = () => {
         </div>
         <div className="home__item_special">
           <div
-            // className="home__lang"
             className={cn("home__lang", { _active: i18n.language === "ru" })}
             onClick={() => {
               i18n.changeLanguage("ru");
@@ -35,7 +39,6 @@ const AboutMeHome = () => {
           </div>
           |
           <div
-            // className="home__lang"
             className={cn("home__lang", { _active: i18n.language === "en" })}
             onClick={() => {
               i18n.changeLanguage("en");
