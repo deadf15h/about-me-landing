@@ -1,16 +1,15 @@
 import iPortfolio from "../../assets/img/photo_for_portfolio.jpg";
 import { Trans, useTranslation } from "react-i18next";
 import cn from "classnames";
-import "./about-me.home.sass";
 import { useWidth } from "../../hooks/use-width";
+import "./about-me.home.sass";
 
 const AboutMeHome = () => {
   const { i18n } = useTranslation();
-  const { isMobileWidth, isDesktopWidth } = useWidth();
 
-  console.log(
-    `isMobileWidth: ${isMobileWidth}, isDesktopWidth: ${isDesktopWidth}`
-  );
+  // console.log(
+  //   `isMobileWidth: ${isMobileWidth}, isDesktopWidth: ${isDesktopWidth}`
+  // );
   return (
     <div className="home" id="home">
       <div className="home__box">

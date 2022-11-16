@@ -20,3 +20,30 @@
         transition-duration: .3s
         &:hover
             color: $black
+
+.header
+    &__btn
+        position: relative
+        cursor: pointer
+        width: 20px
+        height: 16px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    &__btn-row
+        width: 20px
+        height: 2px
+        background-color: $black
+        border-radius: 15px
+        transition: transform 0.3s
+        &._opened
+            &:first-child
+                position: absolute
+                transform: rotate(45deg)
+                top: 7px
+            &:last-child
+                position: absolute
+                transform: rotate(-45deg)
+                bottom: 7px
+            &:nth-child(2)
+                opacity: 0

@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useWidth } from "../../hooks/use-width";
+import cn from "classnames";
 import "./about-me.navigation.sass";
 
 const AboutMeNavigation = () => {
@@ -7,6 +10,21 @@ const AboutMeNavigation = () => {
       behavior: "smooth",
     });
   };
+
+  const { isMobileWidth, isDesktopWidth } = useWidth();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const toggleMenu = () => {
+    setIsOpen((state) => !state);
+  };
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isOpen]);
 
   const { t } = useTranslation();
 
@@ -27,6 +45,13 @@ const AboutMeNavigation = () => {
       <div className="navigation__item" onClick={() => goTo("#contacts")}>
         {t("contacts")}
       </div>
+      {isMobileWidth && (
+        <div className="header__btn" onClick={toggleMenu}>
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+        </div>
+      )}
     </div>
   );
 };
