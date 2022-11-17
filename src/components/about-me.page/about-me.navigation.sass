@@ -50,4 +50,15 @@
 
 @media (max-width: $mobile-width)
     .navigation
+        position: fixed
+        top: 0px
+        left: 0px
+        height: 100vh
+        max-width: 100vw
+        width: 100vw
+        background: $white
+        transform: translateY(-100%)
+        transition: transform 0.3s
+        overflow: auto
         &._open
+            transform: translateY(0%)
