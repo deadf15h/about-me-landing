@@ -6,6 +6,7 @@ import "./about-me.home.sass";
 
 const AboutMeHome = () => {
   const { i18n } = useTranslation();
+  const { isMobileWidth, isDesktopWidth } = useWidth();
 
   // console.log(
   //   `isMobileWidth: ${isMobileWidth}, isDesktopWidth: ${isDesktopWidth}`
@@ -27,25 +28,27 @@ const AboutMeHome = () => {
             21 years old, Tver
           </Trans>
         </div>
-        <div className="home__item_special">
-          <div
-            className={cn("home__lang", { _active: i18n.language === "ru" })}
-            onClick={() => {
-              i18n.changeLanguage("ru");
-            }}
-          >
-            RU
+        {isDesktopWidth && (
+          <div className="home__item_special">
+            <div
+              className={cn("home__lang", { _active: i18n.language === "ru" })}
+              onClick={() => {
+                i18n.changeLanguage("ru");
+              }}
+            >
+              RU
+            </div>
+            |
+            <div
+              className={cn("home__lang", { _active: i18n.language === "en" })}
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              EN
+            </div>
           </div>
-          |
-          <div
-            className={cn("home__lang", { _active: i18n.language === "en" })}
-            onClick={() => {
-              i18n.changeLanguage("en");
-            }}
-          >
-            EN
-          </div>
-        </div>
+        )}
       </div>
       <div className="home__img">
         <img src={iPortfolio} alt="" className="home__img_photo" />

@@ -26,16 +26,55 @@ const AboutMeNavigation = () => {
     }
   }, [isOpen]);
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className={cn("navigation", { _open: isOpen })}>
       {isMobileWidth ? (
-        <div className="header__btn" onClick={toggleMenu}>
-          <div className={cn("header__btn-row", { _opened: isOpen })} />
-          <div className={cn("header__btn-row", { _opened: isOpen })} />
-          <div className={cn("header__btn-row", { _opened: isOpen })} />
-        </div>
+        <>
+          <div className="navigation__item" onClick={() => goTo("#home")}>
+            {t("home")}
+          </div>
+          <div
+            className="navigation__item"
+            onClick={() => goTo("#description")}
+          >
+            {t("about me")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#skills")}>
+            {t("skills")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#portfolio")}>
+            {t("portfolio")}
+          </div>
+          <div className="navigation__item" onClick={() => goTo("#contacts")}>
+            {t("contacts")}
+          </div>
+          <div className="home__item_special">
+            <div
+              className={cn("home__lang", { _active: i18n.language === "ru" })}
+              onClick={() => {
+                i18n.changeLanguage("ru");
+              }}
+            >
+              RU
+            </div>
+            |
+            <div
+              className={cn("home__lang", { _active: i18n.language === "en" })}
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              EN
+            </div>
+          </div>
+          <div className="header__btn" onClick={toggleMenu}>
+            <div className={cn("header__btn-row", { _opened: isOpen })} />
+            <div className={cn("header__btn-row", { _opened: isOpen })} />
+            <div className={cn("header__btn-row", { _opened: isOpen })} />
+          </div>
+        </>
       ) : (
         <>
           <div className="navigation__item" onClick={() => goTo("#home")}>

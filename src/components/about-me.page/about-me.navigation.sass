@@ -20,8 +20,6 @@
         transition-duration: .3s
         &:hover
             color: $black
-    &._open
-        transform: translateY(0%)
 
 .header
     &__btn
@@ -49,3 +47,7 @@
                 bottom: 7px
             &:nth-child(2)
                 opacity: 0
+
+@media (max-width: $mobile-width)
+    .navigation
+        &._open
