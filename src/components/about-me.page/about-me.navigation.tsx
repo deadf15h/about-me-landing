@@ -107,19 +107,49 @@ const AboutMeNavigation = () => {
           </div>
         </>
       )} */}
-        <div className="navigation__item" onClick={() => goTo("#home")}>
+        <div
+          className="navigation__item"
+          onClick={() => {
+            toggleMenu();
+            goTo("#home");
+          }}
+        >
           {t("home")}
         </div>
-        <div className="navigation__item" onClick={() => goTo("#description")}>
+        <div
+          className="navigation__item"
+          onClick={() => {
+            toggleMenu();
+            goTo("#description");
+          }}
+        >
           {t("about me")}
         </div>
-        <div className="navigation__item" onClick={() => goTo("#skills")}>
+        <div
+          className="navigation__item"
+          onClick={() => {
+            toggleMenu();
+            goTo("#skills");
+          }}
+        >
           {t("skills")}
         </div>
-        <div className="navigation__item" onClick={() => goTo("#portfolio")}>
+        <div
+          className="navigation__item"
+          onClick={() => {
+            toggleMenu();
+            goTo("#portfolio");
+          }}
+        >
           {t("portfolio")}
         </div>
-        <div className="navigation__item" onClick={() => goTo("#contacts")}>
+        <div
+          className="navigation__item"
+          onClick={() => {
+            toggleMenu();
+            goTo("#contacts");
+          }}
+        >
           {t("contacts")}
         </div>
       </div>
