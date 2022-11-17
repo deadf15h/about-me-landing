@@ -76,6 +76,27 @@ const AboutMeNavigation = () => {
         >
           {t("contacts")}
         </div>
+        {isMobileWidth && (
+          <div className="home__item_special">
+            <div
+              className={cn("home__lang", { _active: i18n.language === "ru" })}
+              onClick={() => {
+                i18n.changeLanguage("ru");
+              }}
+            >
+              RU
+            </div>
+            |
+            <div
+              className={cn("home__lang", { _active: i18n.language === "en" })}
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              EN
+            </div>
+          </div>
+        )}
       </div>
       {isMobileWidth && (
         <div className="header__btn" onClick={toggleMenu}>
