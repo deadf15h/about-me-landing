@@ -122,14 +122,14 @@ const AboutMeNavigation = () => {
         <div className="navigation__item" onClick={() => goTo("#contacts")}>
           {t("contacts")}
         </div>
-        {isMobileWidth && (
-          <div className="header__btn" onClick={toggleMenu}>
-            <div className={cn("header__btn-row", { _opened: isOpen })} />
-            <div className={cn("header__btn-row", { _opened: isOpen })} />
-            <div className={cn("header__btn-row", { _opened: isOpen })} />
-          </div>
-        )}
       </div>
+      {isMobileWidth && (
+        <div className="header__btn" onClick={toggleMenu}>
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+          <div className={cn("header__btn-row", { _opened: isOpen })} />
+        </div>
+      )}
     </>
   );
 };
