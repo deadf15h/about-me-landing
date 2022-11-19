@@ -1,4 +1,5 @@
 import iPortfolio from "../../assets/img/photo_for_portfolio.jpg";
+import iPortfolioMobile from "../../assets/img/photo_for_portfolio_mobile.jpg";
 import { Trans, useTranslation } from "react-i18next";
 import cn from "classnames";
 import { useWidth } from "../../hooks/use-width";
@@ -51,7 +52,11 @@ const AboutMeHome = () => {
         )}
       </div>
       <div className="home__img">
-        <img src={iPortfolio} alt="" className="home__img_photo" />
+        <img
+          src={isDesktopWidth ? iPortfolio : iPortfolioMobile}
+          alt=""
+          className="home__img_photo"
+        />
       </div>
     </div>
   );
