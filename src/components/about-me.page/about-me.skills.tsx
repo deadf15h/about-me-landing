@@ -23,7 +23,6 @@ const AboutMeSkills = () => {
         </div>
         <AppearingContainer time={1} offset={-300}>
           <div className="skills__box">
-            {/* //FIXME  */}
             <AboutMeSkillItem
               skillLogo={iTypescriptLogo}
               skillTitle="Typescript"
