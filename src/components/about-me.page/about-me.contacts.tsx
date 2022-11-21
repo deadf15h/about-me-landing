@@ -2,11 +2,12 @@ import AppearingContainer from "../appearing-container";
 import AboutMeContactsItem from "./about-me.contacts-item";
 import iLinkedinLogo from "../../assets/img/linkedin-logo.png";
 import iGithubLogo from "../../assets/img/github-logo.png";
-import "./about-me.contacts.sass";
 import { Trans, useTranslation } from "react-i18next";
+import "./about-me.contacts.sass";
 
 const AboutMeContacts = () => {
   const { t } = useTranslation();
+
   return (
     <div className="about-me__container">
       <div className="contacts">

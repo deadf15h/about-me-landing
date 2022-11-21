@@ -6,8 +6,8 @@ import iOopLogo from "../../assets/img/oop-logo.png";
 import iLinuxLogo from "../../assets/img/linux-logo.jpg";
 import AppearingContainer from "../appearing-container";
 import AboutMeSkillItem from "./about-me.skill-item";
-import "./about-me.skills.sass";
 import { useTranslation } from "react-i18next";
+import "./about-me.skills.sass";
 
 const AboutMeSkills = () => {
   const { t } = useTranslation();

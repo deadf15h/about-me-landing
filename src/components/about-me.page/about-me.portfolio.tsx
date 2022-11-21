@@ -1,8 +1,8 @@
 import AppearingContainer from "../appearing-container";
 import iGagarinExample from "../../assets/img/portfolio-gagarin.png";
 import iJachteeExample from "../../assets/img/portfolio-jachtee.png";
-import "./about-me.portfolio.sass";
 import { useTranslation } from "react-i18next";
+import "./about-me.portfolio.sass";
 
 const AboutMePortfolio = () => {
   const { t } = useTranslation();

@@ -11,7 +11,7 @@ const AboutMeNavigation = () => {
     });
   };
 
-  const { isMobileWidth, isDesktopWidth } = useWidth();
+  const { isMobileWidth } = useWidth();
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const toggleMenu = () => {

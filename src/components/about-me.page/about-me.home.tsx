@@ -7,11 +7,8 @@ import "./about-me.home.sass";
 
 const AboutMeHome = () => {
   const { i18n } = useTranslation();
-  const { isMobileWidth, isDesktopWidth } = useWidth();
+  const { isDesktopWidth } = useWidth();
 
-  // console.log(
-  //   `isMobileWidth: ${isMobileWidth}, isDesktopWidth: ${isDesktopWidth}`
-  // );
   return (
     <div className="home" id="home">
       <div className="home__box">
