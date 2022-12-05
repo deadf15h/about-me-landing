@@ -1,18 +1,26 @@
 import AppearingContainer from "../appearing-container";
 import iGagarinExample from "../../assets/img/portfolio-gagarin.png";
 import iJachteeExample from "../../assets/img/portfolio-jachtee.png";
+import iGagarinLogo from "../../assets/img/gagarin-logo.svg";
+import iJachteeLogo from "../../assets/img/jachtee-logo.svg";
 import { useTranslation } from "react-i18next";
 import "./about-me.portfolio.sass";
+import { useWidth } from "../../hooks/use-width";
 
 const AboutMePortfolio = () => {
   const { t } = useTranslation();
+  const { isMobileWidth } = useWidth();
 
   return (
     <div className="about-me__container description" id="portfolio">
       <div className="about-me__title">{t("portfolio")}</div>
       <AppearingContainer time={1} offset={-300}>
         <div className="portfolio__item">
-          <img src={iGagarinExample} alt="" className="portfolio__img" />
+          <img
+            src={isMobileWidth ? iGagarinLogo : iGagarinExample}
+            alt=""
+            className="portfolio__img"
+          />
           <a href="https://app.gagarin.world/" target="_blank">
             <div className="portfolio__title">GAGARIN Launchpad</div>
           </a>
@@ -20,7 +28,11 @@ const AboutMePortfolio = () => {
       </AppearingContainer>
       <AppearingContainer time={1} offset={-300}>
         <div className="portfolio__item">
-          <img src={iJachteeExample} alt="" className="portfolio__img" />
+          <img
+            src={isMobileWidth ? iJachteeLogo : iJachteeExample}
+            alt=""
+            className="portfolio__img"
+          />
           <a href="http://jachtee.net/" target="_blank">
             <div className="portfolio__title">Jachtee</div>
           </a>
