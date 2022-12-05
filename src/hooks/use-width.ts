@@ -1,5 +1,3 @@
-import { useMemo } from "react";
-
 export const useWidth = () => {
   const mobileWidth = 920;
   const screenWidth = window.screen.width;
