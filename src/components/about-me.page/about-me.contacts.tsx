@@ -21,7 +21,7 @@ const AboutMeContacts = () => {
               You are welcome!
             </Trans>
           </div>
-          <a href="https://t.me/thelogsamurai_feedback_bot" target="_blank">
+          <a href="https://t.me/thelogsamurai" target="_blank">
             <div className="contacts__button">{t("Send message")}</div>
           </a>
           <div className="contacts__list">
