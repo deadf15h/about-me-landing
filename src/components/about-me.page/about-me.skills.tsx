@@ -26,33 +26,12 @@ const AboutMeSkills = () => {
             <AboutMeSkillItem
               skillLogo={iTypescriptLogo}
               skillTitle="Typescript"
-              skillRate={4}
             />
-            <AboutMeSkillItem
-              skillLogo={iReactLogo}
-              skillTitle="React"
-              skillRate={3}
-            />
-            <AboutMeSkillItem
-              skillLogo={iSassLogo}
-              skillTitle="SASS"
-              skillRate={4}
-            />
-            <AboutMeSkillItem
-              skillLogo={iGitLogo}
-              skillTitle="Git"
-              skillRate={3}
-            />
-            <AboutMeSkillItem
-              skillLogo={iLinuxLogo}
-              skillTitle="Linux"
-              skillRate={2}
-            />
-            <AboutMeSkillItem
-              skillLogo={iOopLogo}
-              skillTitle="OOP"
-              skillRate={3}
-            />
+            <AboutMeSkillItem skillLogo={iReactLogo} skillTitle="React" />
+            <AboutMeSkillItem skillLogo={iSassLogo} skillTitle="SASS" />
+            <AboutMeSkillItem skillLogo={iGitLogo} skillTitle="Git" />
+            <AboutMeSkillItem skillLogo={iLinuxLogo} skillTitle="Linux" />
+            <AboutMeSkillItem skillLogo={iOopLogo} skillTitle="OOP" />
           </div>
         </AppearingContainer>
       </div>
