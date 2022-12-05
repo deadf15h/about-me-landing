@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useWidth } from "../../hooks/use-width";
+import iMoon from "../../assets/img/moon.svg";
 import cn from "classnames";
 import "./about-me.navigation.sass";
 
@@ -95,6 +96,7 @@ const AboutMeNavigation = () => {
             >
               EN
             </div>
+            <img src={iMoon} alt="" className="home__theme" />
           </div>
         )}
       </div>

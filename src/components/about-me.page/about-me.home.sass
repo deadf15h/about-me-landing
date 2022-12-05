@@ -34,6 +34,13 @@
         justify-content: center
         &_photo
             height: 480px
+    &__theme
+        cursor: pointer
+        transition-duration: .3s
+        width: 20px
+        height: 20px
+        &:hover
+            opacity: .3
 
 ._active
     color: $black
@@ -56,6 +63,10 @@
                 font-size: 34px
                 transform: rotate(0deg)
                 width: fit-content
+        &__theme
+            margin-left: 120px
+            width: 34px
+            height: 34px
         &__img
             &_photo
                 height: 280px

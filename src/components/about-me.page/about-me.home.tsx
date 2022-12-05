@@ -1,5 +1,6 @@
 import iPortfolio from "../../assets/img/photo_for_portfolio.jpg";
 import iPortfolioMobile from "../../assets/img/photo_for_portfolio_mobile.jpg";
+import iMoon from "../../assets/img/moon.svg";
 import { Trans, useTranslation } from "react-i18next";
 import cn from "classnames";
 import { useWidth } from "../../hooks/use-width";
@@ -45,6 +46,7 @@ const AboutMeHome = () => {
             >
               EN
             </div>
+            <img src={iMoon} alt="" className="home__theme" />
           </div>
         )}
       </div>
