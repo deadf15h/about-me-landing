@@ -4,8 +4,8 @@ import iJachteeExample from "../../assets/img/portfolio-jachtee.png";
 import iGagarinLogo from "../../assets/img/gagarin-logo.svg";
 import iJachteeLogo from "../../assets/img/jachtee-logo.svg";
 import { useTranslation } from "react-i18next";
-import "./about-me.portfolio.sass";
 import { useWidth } from "../../hooks/use-width";
+import "./about-me.portfolio.sass";
 
 const AboutMePortfolio = () => {
   const { t } = useTranslation();
