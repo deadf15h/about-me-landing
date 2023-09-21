@@ -13,8 +13,6 @@ const AboutMeDescription = () => {
           <Trans i18nKey="description.content">
             Frontend developer from Tver, Russia. <br />
             <br />
-            I'm studying in TvSU on at the Faculty of Applied Mathematics and
-            Cybernetics.
             <br />
             <br />I love programming.❤️
           </Trans>
