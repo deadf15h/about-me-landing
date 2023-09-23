@@ -3,17 +3,17 @@ import Layout from "./components/layout";
 import AboutMePage from "./pages/about-me.page/about-me.page";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<AboutMePage />} />
-          </Routes>
-        </Layout>
-      </Router>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Router>
+				<Layout>
+					<Routes>
+						<Route path="/" element={<AboutMePage />} />
+					</Routes>
+				</Layout>
+			</Router>
+		</div>
+	);
 }
 
 export default App;

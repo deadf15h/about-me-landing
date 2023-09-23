@@ -7,16 +7,16 @@ import AboutMeSkills from "../../components/about-me.page/about-me.skills";
 import "./about-me.page.sass";
 
 const AboutMePage = () => {
-  return (
-    <div className="about-me">
-      <AboutMeNavigation />
-      <AboutMeHome />
-      <AboutMeDescription />
-      <AboutMeSkills />
-      <AboutMePortfolio />
-      <AboutMeContacts />
-    </div>
-  );
+	return (
+		<div className="about-me">
+			<AboutMeNavigation />
+			<AboutMeHome />
+			<AboutMeDescription />
+			<AboutMeSkills />
+			<AboutMePortfolio />
+			<AboutMeContacts />
+		</div>
+	);
 };
 
 export default AboutMePage;
