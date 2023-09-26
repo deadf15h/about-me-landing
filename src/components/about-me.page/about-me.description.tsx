@@ -14,7 +14,6 @@ const AboutMeDescription = () => {
 						Frontend developer from Tver, Russia. <br />
 						<br />
 						<br />
-						<br />
 						I love programming.❤️
 					</Trans>
 				</AppearingContainer>

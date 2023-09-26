@@ -12,7 +12,7 @@ const en = {
 	},
 	description: {
 		content:
-			"Frontend developer from Tver, Russia.<1></1><2></2><4></4>I love programming.❤️",
+			"Frontend developer from Tver, Russia.<1></1><2></2>I love programming.❤️",
 	},
 	contactsSection: {
 		text: "Want to know more or just chat?<1></1>You are welcome!",
