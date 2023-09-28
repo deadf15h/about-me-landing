@@ -11,8 +11,8 @@ const AboutMeRate: FC<Props> = ({ rate }) => {
 	const [selectedStars] = useState(rate);
 	return (
 		<>
-			{createArray(5).map((n, i) => (
-				<RateStar key={i} selected={selectedStars > i} />
+			{createArray(5).map((_, i) => (
+				<RateStar key={`id${i}`} selected={selectedStars > i} />
 			))}
 		</>
 	);
