@@ -6,6 +6,7 @@ import iJachteeLogo from "../../assets/img/jachtee-logo.svg";
 import { useTranslation } from "react-i18next";
 import { useWidth } from "../../hooks/use-width";
 import "./about-me.portfolio.sass";
+import AboutMePortfolioItem from "./about-me.portfolio-item.component";
 
 const AboutMePortfolio = () => {
 	const { t } = useTranslation();
@@ -14,7 +15,13 @@ const AboutMePortfolio = () => {
 	return (
 		<div className="about-me__container description" id="portfolio">
 			<div className="about-me__title">{t("portfolio")}</div>
-			<AppearingContainer time={1} offset={-300}>
+			<AboutMePortfolioItem
+				projectTitle="GAGARIN Launchpad"
+				projectExample={iGagarinExample}
+				projectLogo={iGagarinLogo}
+				projectLink="https://app.gagarin.world/"
+			/>
+			{/* <AppearingContainer time={1} offset={-300}>
 				<div className="portfolio__item">
 					<img
 						src={isMobileWidth ? iGagarinLogo : iGagarinExample}
@@ -37,7 +44,7 @@ const AboutMePortfolio = () => {
 						<div className="portfolio__title">Jachtee</div>
 					</a>
 				</div>
-			</AppearingContainer>
+			</AppearingContainer> */}
 		</div>
 	);
 };
