@@ -2,7 +2,7 @@ import { FC } from "react";
 import "./about-me.skill-item.sass";
 
 type Props = {
-	skillLogo: any;
+	skillLogo: string;
 	skillTitle: string;
 };
 
