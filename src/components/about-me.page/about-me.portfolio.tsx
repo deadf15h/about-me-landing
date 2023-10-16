@@ -9,37 +9,37 @@ import AboutMePortfolioItem from "./about-me.portfolio-item.component";
 import "./about-me.portfolio.sass";
 
 const AboutMePortfolio = () => {
-  const { t } = useTranslation();
+	const { t } = useTranslation();
 
-  return (
-    <div className="about-me__container description" id="portfolio">
-      <div className="about-me__title">{t("portfolio")}</div>
-      <AboutMePortfolioItem
-        projectTitle="GAGARIN Launchpad"
-        projectExample={iGagarinExample}
-        projectLogo={iGagarinLogo}
-        projectLink="https://app.gagarin.world/"
-      />
-      <AboutMePortfolioItem
-        projectTitle="Kopidoo App"
-        projectExample={iKopidooAppExample}
-        projectLogo={iKopidooLogo}
-        projectLink="https://app.kopidoo.ru/"
-      />
-      <AboutMePortfolioItem
-        projectTitle="Kopidoo Public Site"
-        projectExample={iKopidooPublicExample}
-        projectLogo={iKopidooLogo}
-        projectLink="https://kopidoo.ru/"
-      />
-      <AboutMePortfolioItem
-        projectTitle="Kopidoo Journal"
-        projectExample={iKopidooJournalExample}
-        projectLogo={iKopidooLogo}
-        projectLink="https://journal.kopidoo.ru/"
-      />
-    </div>
-  );
+	return (
+		<div className="about-me__container description" id="portfolio">
+			<div className="about-me__title">{t("portfolio")}</div>
+			<AboutMePortfolioItem
+				projectTitle="GAGARIN Launchpad"
+				projectExample={iGagarinExample}
+				projectLogo={iGagarinLogo}
+				projectLink="https://app.gagarin.world/"
+			/>
+			<AboutMePortfolioItem
+				projectTitle="Kopidoo App"
+				projectExample={iKopidooAppExample}
+				projectLogo={iKopidooLogo}
+				projectLink="https://app.kopidoo.ru/"
+			/>
+			<AboutMePortfolioItem
+				projectTitle="Kopidoo Public Site"
+				projectExample={iKopidooPublicExample}
+				projectLogo={iKopidooLogo}
+				projectLink="https://kopidoo.ru/"
+			/>
+			<AboutMePortfolioItem
+				projectTitle="Kopidoo Journal"
+				projectExample={iKopidooJournalExample}
+				projectLogo={iKopidooLogo}
+				projectLink="https://journal.kopidoo.ru/"
+			/>
+		</div>
+	);
 };
 
 export default AboutMePortfolio;
