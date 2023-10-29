@@ -1,5 +1,5 @@
 {
-  "name": "thelogsamurai-landing",
+  "name": "frostbitten-landing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,8 +32,7 @@
     "lint:fix": "rome format --write src && rome check src --apply-suggested"
   },
   "eslintConfig": {
-    "extends": [
-    ]
+    "extends": []
   },
   "browserslist": {
     "production": [
