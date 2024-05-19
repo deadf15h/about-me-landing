@@ -4,6 +4,8 @@ import iSassLogo from "../../assets/img/sass-logo.jpg";
 import iGitLogo from "../../assets/img/git-logo.png";
 import iOopLogo from "../../assets/img/oop-logo.png";
 import iLinuxLogo from "../../assets/img/linux-logo.jpg";
+import iAstroLogo from "../../assets/img/astro-logo.png";
+import iTailwindLogo from "../../assets/img/tailwind-logo.svg";
 import AppearingContainer from "../appearing-container";
 import AboutMeSkillItem from "./about-me.skill-item";
 import { useTranslation } from "react-i18next";
@@ -31,6 +33,8 @@ const AboutMeSkills = () => {
 						<AboutMeSkillItem skillLogo={iSassLogo} skillTitle="SASS" />
 						<AboutMeSkillItem skillLogo={iGitLogo} skillTitle="Git" />
 						<AboutMeSkillItem skillLogo={iLinuxLogo} skillTitle="Linux" />
+						<AboutMeSkillItem skillLogo={iAstroLogo} skillTitle="Astro" />
+						<AboutMeSkillItem skillLogo={iTailwindLogo} skillTitle="Tailwind" />
 						<AboutMeSkillItem skillLogo={iOopLogo} skillTitle="OOP" />
 					</div>
 				</AppearingContainer>
