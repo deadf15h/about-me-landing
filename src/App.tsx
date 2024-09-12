@@ -9,6 +9,9 @@ function App() {
 				<Layout>
 					<Routes>
 						<Route path="/" element={<AboutMePage />} />
+
+						{/* TODO */}
+						<Route path="/hehe" element={<pre />} />
 					</Routes>
 				</Layout>
 			</Router>
