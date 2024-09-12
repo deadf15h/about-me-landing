@@ -4,8 +4,9 @@ import iKopidooAppExample from "../../assets/img/kopidoo-app-portfolio.png";
 import iKopidooPublicExample from "../../assets/img/kopidoo-public-portfolio.png";
 import iKopidooJournalExample from "../../assets/img/kopidoo-journal-portfolio.png";
 import iKopidooLogo from "../../assets/img/kopidoo-logo.svg";
-import { useTranslation } from "react-i18next";
+import iMULogo from "../../assets/img/mu-logo.svg";
 import AboutMePortfolioItem from "./about-me.portfolio-item.component";
+import { useTranslation } from "react-i18next";
 import "./about-me.portfolio.sass";
 
 const AboutMePortfolio = () => {
@@ -37,6 +38,12 @@ const AboutMePortfolio = () => {
 				projectExample={iKopidooJournalExample}
 				projectLogo={iKopidooLogo}
 				projectLink="https://journal.kopidoo.ru/"
+			/>
+			<AboutMePortfolioItem
+				projectTitle="Моя Удаленка"
+				projectExample={iKopidooJournalExample}
+				projectLogo={iMULogo}
+				projectLink="https://moyaudalenka.ru/"
 			/>
 		</div>
 	);
