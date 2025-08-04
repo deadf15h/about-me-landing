@@ -8,7 +8,7 @@ const ru = {
   "Send message": "Отправить сообщение",
   homeSection: {
     name: "Николай<1></1>Морозов",
-    about: "Frontend Разработчик <1></1>23 год, Тверь",
+    about: "Frontend Разработчик <1></1>23 года, Тверь",
   },
   description: {
     content:
