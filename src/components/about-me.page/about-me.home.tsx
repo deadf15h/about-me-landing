@@ -6,57 +6,57 @@ import { useWidth } from "../../hooks/use-width";
 import "./about-me.home.sass";
 
 const AboutMeHome = () => {
-	const { i18n } = useTranslation();
-	const { isDesktopWidth } = useWidth();
+  const { i18n } = useTranslation();
+  const { isDesktopWidth } = useWidth();
 
-	return (
-		<div className="home" id="home">
-			<div className="home__box">
-				<div className="home__item_name">
-					<Trans i18nKey="homeSection.name">
-						Nikolai
-						<br />
-						Morozov
-					</Trans>
-				</div>
-				<div className="home__item_work">
-					<Trans i18nKey="homeSection.about">
-						Frontend Developer
-						<br />
-						21 years old, Tver
-					</Trans>
-				</div>
-				{isDesktopWidth && (
-					<div className="home__item_special">
-						<div
-							className={cn("home__lang", { _active: i18n.language === "ru" })}
-							onClick={() => {
-								i18n.changeLanguage("ru");
-							}}
-						>
-							RU
-						</div>
-						|
-						<div
-							className={cn("home__lang", { _active: i18n.language === "en" })}
-							onClick={() => {
-								i18n.changeLanguage("en");
-							}}
-						>
-							EN
-						</div>
-					</div>
-				)}
-			</div>
-			<div className="home__img">
-				<img
-					src={isDesktopWidth ? iPortfolio : iPortfolioMobile}
-					alt=""
-					className="home__img_photo"
-				/>
-			</div>
-		</div>
-	);
+  return (
+    <div className="home" id="home">
+      <div className="home__box">
+        <div className="home__item_name">
+          <Trans i18nKey="homeSection.name">
+            Nikolai
+            <br />
+            Morozov
+          </Trans>
+        </div>
+        <div className="home__item_work">
+          <Trans i18nKey="homeSection.about">
+            Frontend Developer
+            <br />
+            23 years old, Tver
+          </Trans>
+        </div>
+        {isDesktopWidth && (
+          <div className="home__item_special">
+            <div
+              className={cn("home__lang", { _active: i18n.language === "ru" })}
+              onClick={() => {
+                i18n.changeLanguage("ru");
+              }}
+            >
+              RU
+            </div>
+            |
+            <div
+              className={cn("home__lang", { _active: i18n.language === "en" })}
+              onClick={() => {
+                i18n.changeLanguage("en");
+              }}
+            >
+              EN
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="home__img">
+        <img
+          src={isDesktopWidth ? iPortfolio : iPortfolioMobile}
+          alt=""
+          className="home__img_photo"
+        />
+      </div>
+    </div>
+  );
 };
 
 export default AboutMeHome;
